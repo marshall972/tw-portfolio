@@ -46,7 +46,7 @@ export default function Post() {
 											alt={post.mainImage.alt}
 											className="w-full h-full rounded-r object-cover absolute"
 										/>
-										<span className="block relative flex h-full justify-end items-end pr-4 pb-4">
+										<span className="relative flex h-full justify-end items-end pr-4 pb-4">
 											<h3 className="text-blue-100 text-lg font-bold px-3 py-4 bg-blue-600 bg-opacity-75 rounded">
 												{post.title}
 											</h3>

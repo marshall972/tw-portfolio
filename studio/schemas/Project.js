@@ -16,7 +16,7 @@ export default {
 
 		{
 			name: 'place',
-			type: 'string',
+			type: 'string'
 		},
 
 		{
@@ -33,7 +33,8 @@ export default {
 				list: [
 					{ value: 'personal', title: 'Personal' },
 					{ value: 'client', title: 'Client' },
-					{ value: 'school', title: 'School' }
+					{ value: 'school', title: 'School' },
+					{ value: 'fun', title: 'Fun' }
 				],
 			},
 		},
