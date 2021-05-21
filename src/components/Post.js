@@ -9,22 +9,24 @@ export default function Post() {
 		sanityClient
 			.fetch(
 				`*[_type == "post"]{
-				title,
-				slug,mainImage{
-					asset->{
-						_id,
-						url
-					},
-					alt
-				}
-			}`
-			).then((data) => setPost(data)).catch(console.error);
+					title,
+					slug,mainImage{
+						asset->{
+							_id,
+							url
+						},
+						alt
+					}
+				}`
+			)
+			.then((data) => setPost(data))
+			.catch(console.error);
 	}, []);
 
 	return (
-		<main className="bg-blue-100 min-h-screen p12">
+		<main className="bg-blue-100 min-h-screen p-12">
 			<section className="container mx-auto">
-				<h1 className="text-5xl text-yellow-500 pt-12 flex justify-center cursive">
+				<h1 className="text-5xl text-yellow-500 flex justify-center cursive">
 					Mes Articles
 				</h1>
 				<h2 className="text-lg text-blue-600 mt-4 flex justify-center mb-12">

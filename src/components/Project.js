@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import { Link } from 'react-router-dom';
 import sanityClient from '../client';
 
 export default function Project() {
@@ -23,9 +22,11 @@ export default function Project() {
 	}, []);
 
 	return (
-		<main className="bg-blue-50 min-h-screen p-12">
+		<main className="bg-blue-100 min-h-screen p-12">
 			<section className="container mx-auto">
-				<h1 className="text-5xl flex justify-center projet-title cursive">Mes projets</h1>
+				<h1 className="text-5xl flex justify-center projet-title cursive">
+					Mes projets
+				</h1>
 				<h2 className="text-lg text-blue-600 flex justify-center mt-4 mb-12">
 					Bienvenue sur ma page de projets
 				</h2>
